@@ -2,9 +2,12 @@
   "name": "dockerize-moleculer",
   "version": "1.0.0",
   "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hello": "./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/amroessam/dockerize-moleculer/issues"
   },
-  "homepage": "https://github.com/amroessam/dockerize-moleculer#readme"
+  "homepage": "https://github.com/amroessam/dockerize-moleculer#readme",
+  "dependencies": {
+    "boxen": "^4.0.0",
+    "chalk": "^2.4.2",
+    "yargs": "^13.2.4"
+  }
 }
