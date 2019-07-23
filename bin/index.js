@@ -32,7 +32,7 @@
     .option("dockerFile", {
       describe: "Path to base Dockerfile to add",
       type: "string",
-      default: process.platform === 'win32' ? `${__dirname}\\utils\\base.Dockerfile` : `${__dirname}/utils/base.Dockerfile`
+      default: function() { return process.platform === 'win32' ? `${__dirname}\\utils\\base.Dockerfile` : `${__dirname}/utils/base.Dockerfile`}
     }).argv;
 
   // convert all paths to absolute paths
