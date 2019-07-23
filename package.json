@@ -22,15 +22,10 @@
   },
   "homepage": "https://github.com/amroessam/dockerize-moleculer#readme",
   "dependencies": {
-    "boxen": "^4.0.0",
-    "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "copy-dir": "^1.1.0",
     "enquirer": "^2.3.1",
     "ncp": "^2.0.0",
-    "prompt-checkbox": "^2.2.0",
-    "prompt-choices": "^5.0.0",
-    "top-level-await": "^1.1.0",
     "yargs": "^13.2.4"
   }
 }
