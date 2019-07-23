@@ -1,5 +1,5 @@
 {
-  "name": "moleculer-dockerized",
+  "name": "moldock",
   "version": "1.0.0",
   "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
   "main": "bin/index.js",
@@ -8,7 +8,6 @@
     "dev": "node --inspect=0.0.0.0:9229 bin/index"
   },
   "bin": {
-    "moleculer-dockerized": "./bin/index.js",
     "moldock": "./bin/index.js"
   },
   "repository": {
@@ -27,5 +26,6 @@
     "enquirer": "^2.3.1",
     "ncp": "^2.0.0",
     "yargs": "^13.2.4"
-  }
+  },
+  "keywords": ["microservices", "microservice", "cli", "moleculer"]
 }

@@ -1,5 +1,5 @@
-![Moleculer logo](https://github.com/moleculerjs/moleculer/blob/master/docs/assets/logo.png)
-# moleculer-dockerized
+![Moleculer logo](https://raw.githubusercontent.com/moleculerjs/moleculer/HEAD/docs/assets/logo.png)
+# moldock (Moleculer Dockerized)
 
 ## A CLI tool to deconstruct [moleculer](https://github.com/moleculerjs/moleculer) projects into their own dependant projects, to be able to dockerize them individually
 
