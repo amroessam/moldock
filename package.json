@@ -1,0 +1,19 @@
+{
+  "name": "dockerize-moleculer",
+  "version": "1.0.0",
+  "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amroessam/dockerize-moleculer.git"
+  },
+  "author": "Amr Essam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amroessam/dockerize-moleculer/issues"
+  },
+  "homepage": "https://github.com/amroessam/dockerize-moleculer#readme"
+}
