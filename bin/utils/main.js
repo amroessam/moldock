@@ -1,10 +1,9 @@
-#!/usr/bin/env node
-(async function() {
+module.exports = async function() {
   const yargs = require("yargs");
-  const checks = require("./utils/checks");
-  const processDir = require("./utils/process");
+  const checks = require("./checks");
+  const processDir = require("./process");
   const path = require("path");
-  const getBaseName = require("./utils/getBaseName");
+  const getBaseName = require("./getBaseName");
   const options = yargs
     .option("p", {
       alias: "path",
@@ -32,13 +31,13 @@
     .option("dockerFile", {
       describe: "Path to base Dockerfile to add",
       type: "string",
-      default: `${__dirname}\\utils\\base.Dockerfile`
+      default: `./bin/utils/base.Dockerfile`
     }).argv;
 
   // convert all paths to absolute paths
   Object.keys(options).forEach(p => {
     if (
-      !(p === "dockerUser" || p === "docker-user" || p === "dockerFile" || p === "docker-file") &&
+      !(p === "dockerUser" || p === "docker-user") &&
       typeof options[p] === "string"
     ) {
       options[p] = path.resolve(options[p]);
@@ -46,5 +45,4 @@
   });
   checks(options);
   await processDir(options);
-  process.exit();
-})();
+};

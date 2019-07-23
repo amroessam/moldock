@@ -8,7 +8,8 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}\\bin\\index.js"
+      "program": "${workspaceFolder}\\bin\\index.js",
+      "args": ["--dockerUser", "amroessam"]
     }
   ]
 }
