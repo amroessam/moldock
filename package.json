@@ -1,5 +1,5 @@
 {
-  "name": "dockerize-moleculer",
+  "name": "moleculer-dockerized",
   "version": "1.0.0",
   "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
   "main": "bin/index.js",
@@ -8,19 +8,19 @@
     "dev": "node --inspect=0.0.0.0:9229 bin/index"
   },
   "bin": {
-    "dockerize-moleculer": "./bin/index.js",
-    "dm": "./bin/index.js"
+    "moleculer-dockerized": "./bin/index.js",
+    "moldock": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amroessam/dockerize-moleculer.git"
+    "url": "git+https://github.com/amroessam/moleculer-dockerized.git"
   },
   "author": "Amr Essam",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amroessam/dockerize-moleculer/issues"
+    "url": "https://github.com/amroessam/moleculer-dockerized/issues"
   },
-  "homepage": "https://github.com/amroessam/dockerize-moleculer#readme",
+  "homepage": "https://github.com/amroessam/moleculer-dockerized#readme",
   "dependencies": {
     "clear": "^0.1.0",
     "copy-dir": "^1.1.0",
