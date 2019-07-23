@@ -32,6 +32,8 @@ It then creates a folder with all the services as their own projects with their 
 
 1. You don't want to copy these folders:
     * node_modules
+    * test
+    * tests
     * .vscode
     * data
     * db

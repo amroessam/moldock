@@ -57,6 +57,6 @@ module.exports = async function(args) {
       console.log(`${service} created successfully!`);
     });
     clear();
-    resolve(console.log('Done!'))
+    resolve(console.log("Done!"));
   });
 };

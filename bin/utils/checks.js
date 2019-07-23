@@ -11,9 +11,11 @@ module.exports = function(args) {
   }
   if (!servicesDirExists(dir, servicesDir)) {
     console.log(
-      `${path.basename(path.resolve(servicesDir))} folder wasn't found. You're sure this is a moleculer project?`
+      `${path.basename(
+        path.resolve(servicesDir)
+      )} folder wasn't found. You're sure this is a moleculer project?`
     );
     process.exit();
   }
-  createDirIfDoesntExit(output)
+  createDirIfDoesntExit(output);
 };
