@@ -4,10 +4,12 @@
   "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --inspect=0.0.0.0:9229 bin/index"
   },
   "bin": {
-    "hello": "./bin/index.js"
+    "dockerize-moleculer": "./bin/index.js",
+    "dm": "./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,8 @@
   "dependencies": {
     "boxen": "^4.0.0",
     "chalk": "^2.4.2",
+    "ncp": "^2.0.0",
+    "prompt-checkbox": "^2.2.0",
     "yargs": "^13.2.4"
   }
 }

@@ -1,0 +1,4 @@
+{
+  "folders": ["node_modules", "services", ".vscode", "data", "db"],
+  "files": ["package.json","package-lock.json", "docker-compose.yml", "docker-compose.env", "Dockerfile", ".dockerignore"]
+}

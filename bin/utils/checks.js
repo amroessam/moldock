@@ -1,7 +1,8 @@
-const servicesDirExists = require("./servicesDirExists");
-const packageJsonExists = require("./packageJsonExists");
 module.exports = function(args) {
-  const { p: dir, s: servicesDir } = args;
+  const servicesDirExists = require("./servicesDirExists");
+  const packageJsonExists = require("./packageJsonExists");
+  const createDirIfDoesntExit = require("./createDirIfDoesntExit");
+  const { p: dir, s: servicesDir, o: output } = args;
   if (!packageJsonExists(dir)) {
     console.log(
       `package.json wasn't found. You're sure this is a node project?`
@@ -10,10 +11,9 @@ module.exports = function(args) {
   }
   if (!servicesDirExists(dir, servicesDir)) {
     console.log(
-      `${
-        servicesDir
-      } folder wasn't found. You're sure this is a moleculer project?`
+      `${path.basename(path.resolve(servicesDir))} folder wasn't found. You're sure this is a moleculer project?`
     );
     process.exit();
   }
+  createDirIfDoesntExit(output)
 };
