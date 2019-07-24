@@ -3,10 +3,11 @@
 
 ## A CLI tool to deconstruct [moleculer](https://github.com/moleculerjs/moleculer) projects into their own dependant projects, to be able to dockerize them individually
 
-# ☠ The Problem 
+# ☠ The Problem
 
 Moleculer structures all it's services in a `services` folder as follows:
-```
+
+```tree
 Project
 ├───services
 │     ├───api.service.js
@@ -19,15 +20,17 @@ When you try to dockerize the services, it creates an image with all the depende
 
 That causes a lot of manual work and a bloated docker image
 
-
 # 🎉The Solution
 
-moleculer-dockerized:
+moldock:
 
 moleculer-dockerized or [`moldock`](https://www.npmjs.com/package/moldock) for short takes the project and asks you what packages are needed for each service.
 It then creates a folder with all the services as their own projects with their corrosponding `package.json`, `Dockerfile`, `docker-compose.yml`, `docker-compose.env`
 
-```
+It creates a new directory one level up from where the project is and appends `-moldock` to the directory.
+This directory will contain all the destructured services in their respective folders. Each service folder will be a combination of the name of the project and the name of the service like so `project-service`
+
+```tree
 Project-moldock
 ├───Project-api
 │     ├───services
@@ -70,11 +73,9 @@ Project-moldock
 2. You have a docker hub account
 3. You want to copy everything in the project to each service
 
-
 # 🔻Installation
 
 `npm i -g moldock`
-
 
 # 🖥Usage
 
@@ -82,9 +83,3 @@ Project-moldock
 2. Run `moldock --dockerUser <your docker user>`
 3. Select the dependecies of each service
 4. Profit
-
-
-# 🙌Output
-
-It creates a new directory one level up from where the project is and appends `-moldock` to the directory.
-This directory will contain all the destructured services in their respective folders. Each service folder will be a combination of the name of the project and the name of the service like so `project-service`
