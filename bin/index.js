@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 (async function() {
+  require('./utils/handleExit')()
   try {
     const yargs = require("yargs");
     const checks = require("./utils/checks");

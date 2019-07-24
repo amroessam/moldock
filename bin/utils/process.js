@@ -17,11 +17,12 @@ module.exports = async function(args) {
         type: "multiselect",
         name: service,
         message: `Which packages would you like to include for ${service}?`,
-        choices: [...Object.keys(pkg.dependencies)]
+        choices: [...Object.keys(pkg.dependencies)],
+        initial: ["moleculer"]
       };
     });
     const depChoice = await prompt(questions);
-
+    createDirIfDoesntExit(output);
     services.forEach(service => {
       const serviceOutput = createDirIfDoesntExit(
         `${output}/${getBaseName(dir)}-${service}`

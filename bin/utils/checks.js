@@ -1,7 +1,6 @@
 module.exports = function(args) {
   const servicesDirExists = require("./servicesDirExists");
   const packageJsonExists = require("./packageJsonExists");
-  const createDirIfDoesntExit = require("./createDirIfDoesntExit");
   const { p: dir, s: servicesDir, o: output } = args;
   if (!packageJsonExists(dir)) {
     console.log(
@@ -17,5 +16,4 @@ module.exports = function(args) {
     );
     process.exit();
   }
-  createDirIfDoesntExit(output);
 };
