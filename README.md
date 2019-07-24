@@ -72,7 +72,7 @@ Project-moldock
 
 2. You have a docker hub account
 3. You want to copy everything in the project to each service
-4. Your services are in a services folder named `<service name>.service.js`
+4. Your services are in a `services` folder named `<service name>.service.js`
 
 # 🔻Installation
 
