@@ -72,6 +72,7 @@ Project-moldock
 
 2. You have a docker hub account
 3. You want to copy everything in the project to each service
+4. Your services are in a services folder named `<service name>.service.js`
 
 # 🔻Installation
 
@@ -83,3 +84,11 @@ Project-moldock
 2. Run `moldock --dockerUser <your docker user>`
 3. Select the dependecies of each service
 4. Profit
+
+# 🛣Roadmap
+
+- [ ] Add a flag to auto build docker image
+- [ ] Add a flag to auto push docker image
+- [ ] Remove `--dockUser` and auto capture it from system
+- [ ] Add an option for main folder append string
+- [ ] Use chalk and boxed to make it look pretty
