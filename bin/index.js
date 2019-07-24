@@ -5,7 +5,6 @@
     const yargs = require("yargs");
     const checks = require("./utils/checks");
     const processDir = require("./utils/process");
-
     const getBaseName = require("./utils/getBaseName");
     const converToAbsPath = require("./utils/convertToAbsPath");
     const options = converToAbsPath(

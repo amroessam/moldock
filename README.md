@@ -87,6 +87,7 @@ Project-moldock
 
 # 🛣Roadmap
 
+- [ ] Auto infer required modules and select them by default
 - [ ] Add a flag to auto build docker image
 - [ ] Add a flag to auto push docker image
 - [ ] Remove `--dockUser` and auto capture it from system
