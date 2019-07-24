@@ -27,6 +27,34 @@ moleculer-dockerized:
 moleculer-dockerized or [`moldock`](https://www.npmjs.com/package/moldock) for short takes the project and asks you what packages are needed for each service.
 It then creates a folder with all the services as their own projects with their corrosponding `package.json`, `Dockerfile`, `docker-compose.yml`, `docker-compose.env`
 
+```
+Project-moldock
+├───Project-api
+│     ├───services
+│     │      └───api.service.js
+│     ├───Dockerfile
+│     ├───docker-compose.yml
+│     ├───docker-compose.env
+│     ├───package.json
+│     └───etc
+├───Project-greeter
+│     ├───services
+│     │      └───greeter.service.js
+│     ├───Dockerfile
+│     ├───docker-compose.yml
+│     ├───docker-compose.env
+│     ├───package.json
+│     └───etc
+├───Project-otherService
+│     ├───services
+│     │      └───otherService.service.js
+│     ├───Dockerfile
+│     ├───docker-compose.yml
+│     ├───docker-compose.env
+│     ├───package.json
+│     └───etc
+├───etc
+```
 
 # 🤷‍♂️Assumptions
 
@@ -39,7 +67,7 @@ It then creates a folder with all the services as their own projects with their 
     * db
     * .git
 
-2. You have a docker hub account 
+2. You have a docker hub account
 3. You want to copy everything in the project to each service
 
 
