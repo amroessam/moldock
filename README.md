@@ -18,7 +18,8 @@ Project
 
 When you try to dockerize the services, it creates an image with all the dependencies of all the services and copies all the services in that image. So if you want the API service to be in it's individual container, everything for all the other services will be copied. Also you will have to create an individual `docker-compose.yml`
 
-That causes a lot of manual work and a bloated docker image
+That causes a lot of manual work and a bloated docker image.
+You can check out the moleculer conduit repo as an example structure [here](https://github.com/moleculerjs/moleculer-examples/tree/master/conduit)
 
 # 🎉The Solution
 
@@ -58,6 +59,8 @@ Project-moldock
 │     └───etc
 ├───etc
 ```
+
+You can check out the exported conduit example in the `example` folder.
 
 # 🤷‍♂️Assumptions
 
