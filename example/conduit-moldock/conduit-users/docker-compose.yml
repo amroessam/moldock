@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    users:
+      image: amroessam/conduit-users:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: users
+  

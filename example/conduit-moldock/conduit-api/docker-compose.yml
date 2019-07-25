@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    api:
+      image: amroessam/conduit-api:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: api
+  

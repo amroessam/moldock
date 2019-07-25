@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    follows:
+      image: amroessam/conduit-follows:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: follows
+  

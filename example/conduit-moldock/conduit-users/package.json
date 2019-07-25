@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "jsonwebtoken": "8.3.0",
+    "moleculer": "0.13.0",
+    "moleculer-db": "0.7.3",
+    "moleculer-db-adapter-mongo": "0.4.0",
+    "ioredis": "3.2.2"
+  },
+  "name": "moleculer-examples-conduit-users"
+}

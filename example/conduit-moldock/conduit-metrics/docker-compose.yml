@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    metrics:
+      image: amroessam/conduit-metrics:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: metrics
+  

@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    articles:
+      image: amroessam/conduit-articles:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: articles
+  

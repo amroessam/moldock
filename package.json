@@ -1,6 +1,6 @@
 {
   "name": "moldock",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "a cli tool to breakdown moleculer projects and dockerize them individually",
   "main": "bin/index.js",
   "scripts": {

@@ -1,0 +1,8 @@
+version: "3.0"
+  services:
+    comments:
+      image: amroessam/conduit-comments:latest
+      env_file: docker-compose.env
+      environment:
+        SERVICES: comments
+  
